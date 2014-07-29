@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+	    <reference name="head">
+            <block type="core/template" name="unique_name_here" template="ship/footer/js.phtml" />
+        </reference>
+	
+		<reference name="head">
+            <!--<block type="core/text" name="external.cdn.jquery" before="-">
+                <action method="setText">
+                    <text>
+					 <![CDATA[
+					  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+					  <script type="text/javascript">jQuery.noConflict();</script>
+					 ]]>
+					</text>
+                </action>
+            </block>-->
+            <!--<action method="addCss"><stylesheet>ship/css/jquery.autoSuggest.css</stylesheet></action>
+			<action method="addItem"><type>skin_js</type><name>ship/js/location_script.js</name><params/></action>
+			<action method="addItem"><type>skin_js</type><name>ship/js/jquery.autoSuggest.js</name><params/></action>-->
+        </reference>
+		
+	   <!--<reference name="head">
+			<action method="addItem"><type>skin_js</type><name>ship/js/jquery-1.11.0.js</name><params/></action>
+        </reference>-->
+    </default>
+	
+    <checkout_cart_index>
+        <reference name="checkout.cart.shipping">
+			<action method="setTemplate"><template>ship/shipping.phtml</template></action>
+        </reference>
+		
+		<reference name="checkout.cart.totals">
+			<action method="setTemplate"><template>ship/checkout/cart/totals.phtml</template></action>
+        </reference>
+		
+    </checkout_cart_index>
+	
+	 <catalog_product_view translate="label">
+	    <reference name="right">
+			<block type="checkout/cart_shipping" name="checkout.cart.shipping" as="shipping" template="ship/product_shipping.phtml"/>
+        </reference>
+	 </catalog_product_view>
+</layout> 

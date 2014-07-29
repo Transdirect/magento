@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Transdirect_Ship>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Transdirect_Ship>
+    </modules>
+</config> 
