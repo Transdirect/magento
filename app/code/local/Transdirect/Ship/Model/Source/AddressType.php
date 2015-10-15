@@ -16,7 +16,7 @@ class Transdirect_Ship_Model_Source_AddressType extends Varien_Object
 
 			array('value' => 'residential', 'label' => $hlp->__('Residential')),
 
-			array('value' => 'commercial', 'label' => $hlp->__('Commercial')),
+			array('value' => 'business', 'label' => $hlp->__('Commercial')),
 
 		);
 

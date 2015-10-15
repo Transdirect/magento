@@ -1,37 +1,23 @@
 <?xml version="1.0" ?>
 
 <config>
-
     <tabs>
-
         <transdirect_ship module="ship" translate="label">
-
             <label>Transdirect Shipping Module</label>
-
             <sort_order>100</sort_order>
-
         </transdirect_ship>
-
     </tabs>
 
     <sections>
-
         <transdirect_section module="ship" translate="label">
-
             <label>General Settings</label>
-
             <sort_order>200</sort_order>
-
             <show_in_default>1</show_in_default>
-
             <show_in_website>1</show_in_website>
-
             <show_in_store>1</show_in_store>
-
             <tab>transdirect_ship</tab>
 
             <groups>
-				
 				<enabletab translate="label">
 				   <label>Enable Extension</label>
                     <sort_order>1</sort_order>
@@ -45,388 +31,393 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-							<frontend_type>select</frontend_type>                                                                     
+							<frontend_type>select</frontend_type>                                          
                         	<source_model>adminhtml/system_config_source_yesno</source_model> 
 					   </enable>		
                    </fields>  							  	
                 </enabletab>
 					
                 <authentication translate="label">
-
                     <label>Authentication (Member Details)</label>
-
                     <sort_order>2</sort_order>
-
                     <show_in_default>1</show_in_default>
-
                     <show_in_website>1</show_in_website>
-
                     <show_in_store>1</show_in_store>
 
                     <fields>
-
                         <email translate="label tooltip comment">
-
                             <label>Email</label>
-
-							 <sort_order>1</sort_order>
-
+							<sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </email>
 
                         <password translate="label tooltip comment">
-
                             <label>Password</label>
-
 							<sort_order>2</sort_order>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </password>
-
                     </fields>
-
                 </authentication>
 
 				<warehouseaddress translate="label">
-
                     <label>Warehouse Address</label>
-
                     <sort_order>3</sort_order>
-
                     <show_in_default>1</show_in_default>
-
                     <show_in_website>1</show_in_website>
-
                     <show_in_store>1</show_in_store>
 
                     <fields>
-
 						<suburb translate="label tooltip comment">
-
                             <label>Suburb</label>
-
 							<sort_order>1</sort_order>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </suburb>
 
                         <postcode translate="label tooltip comment">
-
                             <label>Postcode</label>
-
 							<sort_order>2</sort_order>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </postcode>
 
                         <address translate="label tooltip comment">
-
                             <label>Address</label>
-
 							<sort_order>3</sort_order>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
-                            <frontend_type>select</frontend_type>                                                                     
-
-                        	<source_model>ship/source_addressType</source_model>   
-
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>   
                         </address>
-
                     </fields>
-
                 </warehouseaddress>
 
 				<defaultitemsize translate="label">
-
                     <label>Default Item Size</label>
-
                     <sort_order>4</sort_order>
-
                     <show_in_default>1</show_in_default>
-
                     <show_in_website>1</show_in_website>
-
                     <show_in_store>1</show_in_store>
 
                     <fields>
-
                         <dimensionswidth translate="label tooltip comment">
-
                             <label>Dimensions</label>
-
 							<sort_order>1</sort_order>
-
 							<comment>Width (cm)</comment>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </dimensionswidth>
 
                         <dimensionsheight translate="label tooltip comment">
-
 							<sort_order>2</sort_order>
-
 							<comment>Height (cm)</comment>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </dimensionsheight>
 
                         <dimensionsdim translate="label tooltip comment">
-
 							<sort_order>3</sort_order>
-
 							<comment>Length (cm)</comment>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </dimensionsdim>
 
 						<weight translate="label tooltip comment">
-
                             <label>Weight</label>
-
 							<sort_order>4</sort_order>
-
 							<comment>KG</comment>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </weight>
-
                     </fields>
-
                 </defaultitemsize>
 
-				<displayoptions translate="label">
 
-                    <label>Display Options</label>
-
+                <ordersync translate="label">
+                    <label>Order Sync</label>
                     <sort_order>5</sort_order>
-
                     <show_in_default>1</show_in_default>
-
                     <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    
+                    <fields>
+                        <enableordersync translate="label tooltip comment">
+                            <label>Enable Order Sync Functionality</label>
+                            <sort_order>1</sort_order>
+                            <comment>Sync orders in woocommerce based on status and date selected.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>                                                          
+                            <source_model>adminhtml/system_config_source_yesno</source_model> 
+                        </enableordersync>
+                        
+                        <orderstatus translate="label tooltip comment">
+                            <label>Sync if Status is:</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_orderstatus</source_model>   
+                        </orderstatus>
 
+                        <fromdate type="short">
+                            <label>From Date:</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>ship/adminhtml_system_config_date</frontend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fromdate>
+                    </fields>
+                  
+                </ordersync>
+
+                <fromaddress translate="label">
+                    <label>From Address</label>
+                    <sort_order>6</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    
+                    <fields>
+                        <companyaddress translate="label tooltip comment">
+                            <label>Company Address</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </companyaddress>
+                        
+                        <emailaddress translate="label tooltip comment">
+                            <label>Email Address</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </emailaddress>
+
+                        <phone translate="label tooltip comment">
+                            <label>Phone</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </phone>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </address>
+
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+                    </fields>
+                </fromaddress>
+
+				<displayoptions translate="label">
+                    <label>Display Options</label>
+                    <comment>This selects which couriers you are able to quote from, 
+                    this is an option on the api.</comment>
+                    <sort_order>7</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
 
                     <fields>
-
-                        <availablecoriers translate="label tooltip comment">
-
+                      <!--   <availablecoriers translate="label tooltip comment">
                             <label>Available Couriers: (Shift Select)</label>
-
 							<sort_order>1</sort_order>
-
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>Multiselect</frontend_type>
-
 							<source_model>ship/source_couriers</source_model> 
-
-                        </availablecoriers>
+                        </availablecoriers> -->
 
                         <quotedisplay translate="label tooltip comment">
-
                             <label>Quote Display</label>
-
-							<sort_order>2</sort_order>
-
+                            <comment>This is manipulation that the module needs to do to the results 
+                            that it gets back from the API. The options that are listed in the dropdown are self explanitory.</comment>
+							<sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>select</frontend_type>
-
                         	<source_model>ship/source_quotes</source_model>   
-
                         </quotedisplay>
 
-						<fixedpriceonerror translate="label tooltip comment">
-
-                            <label>Fixed Price On Error</label>
-
-							<sort_order>3</sort_order>
-
+                        <showcouriernames translate="label tooltip comment">
+                            <label>Show Courier Names</label>
+                            <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>   
+                            <comment>eg. show (Courier Name - Price - Shipping Time) instead of just (Price - Shipping Time).</comment>  
+                        </showcouriernames>
 
-                            <!--<frontend_type>checkbox</frontend_type>-->
+                        <pickup translate="label tooltip comment">
+                            <label>Pickup - If Tail Lift Required Include in Quote</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>      
+                        </pickup>
 
-							<frontend_type>select</frontend_type>                                                                     
+                         <delivery translate="label tooltip comment">
+                            <label>Delivery - If Tail Lift Required Include in Quote</label>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>      
+                        </delivery>
 
+                        <handlingsurcharge translate="label tooltip comment">
+                            <label>Apply General Surcharge</label>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>       
+                            <comment>Add a surcharge to the quoted amounts.</comment>
+                        </handlingsurcharge>
+                        
+
+                        <handlingsurcharge1 translate="label tooltip comment">
+                            <label>Apply General Handling Surcharge (Value)</label>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </handlingsurcharge1>
+
+                        <handlingunit translate="label tooltip comment">
+                            <label>Unit</label>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_unit</source_model>   
+                        </handlingunit>
+
+						<fixedpriceonerror translate="label tooltip comment">
+                            <label>Fixed Price On Error</label>
+							<sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_type>select</frontend_type>                     
                         	<source_model>adminhtml/system_config_source_yesno</source_model>   
-
 							<comment>If there is some error getting a quote, just return the set fixed price.</comment>  
-
                         </fixedpriceonerror>
 
 						<fixedpriceonerror1 translate="label tooltip comment">
-
 						    <label>Fixed Price On Error (Value)</label>
-
-							<sort_order>4</sort_order>
-
+							<sort_order>9</sort_order>
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
                             <frontend_type>text</frontend_type>
-
                         </fixedpriceonerror1>
 
-						<showcouriernames translate="label tooltip comment">
-
-                            <label>Show Courier Names</label>
-
-							<sort_order>5</sort_order>
-
-                            <show_in_default>1</show_in_default>
-
-                            <show_in_website>1</show_in_website>
-
-                            <show_in_store>1</show_in_store>
-
-                            <frontend_type>select</frontend_type>                                                                     
-
-                        	<source_model>adminhtml/system_config_source_yesno</source_model>   
-
-							<comment>eg. show (Courier Name - Price - Shipping Time) instead of just (Price - Shipping Time).</comment>  
-
-                        </showcouriernames>
-
-						<handlingsurcharge translate="label tooltip comment">
-
-                            <label>Handling Surcharge</label>
-
-							<sort_order>6</sort_order>
-
-                            <show_in_default>1</show_in_default>
-
-                            <show_in_website>1</show_in_website>
-
-                            <show_in_store>1</show_in_store>
-
-							<frontend_type>select</frontend_type>                                                                     
-
-                        	<source_model>adminhtml/system_config_source_yesno</source_model>   	
-
-							<comment>Add a surcharge to the quoted amounts.</comment>
-
-                        </handlingsurcharge>
-
-						<handlingsurcharge1 translate="label tooltip comment">
-
-						    <label>Handling Surcharge (Value)</label>
-
-							<sort_order>7</sort_order>
-
-                            <show_in_default>1</show_in_default>
-
-                            <show_in_website>1</show_in_website>
-
-                            <show_in_store>1</show_in_store>
-
-                            <frontend_type>text</frontend_type>
-
-                        </handlingsurcharge1>
 
 						<includesurcharge translate="label tooltip comment">
-
-                            <label>Include Insurance Surcharge</label>
-
-							<sort_order>8</sort_order>
-
+                            <label>Inclue Insurance Surcharge</label>
+							<sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
-
                             <show_in_website>1</show_in_website>
-
                             <show_in_store>1</show_in_store>
-
-                            <frontend_type>select</frontend_type>                                                                     
-
+                            <frontend_type>select</frontend_type>
                         	<source_model>adminhtml/system_config_source_yesno</source_model>   	
-
 							<comment>This is an option from the api when requesting a quote.</comment>
-
                         </includesurcharge>
 
+                        <couriersname translate="label">
+                            <label>Available Couriers:</label>
+                            <frontend_model>ship/couriers</frontend_model>
+                            <backend_model>ship/system_config_backend_serialized</backend_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </couriersname>
                     </fields>
-
                 </displayoptions>
 
+                <orderbox translate="label">
+                    <label>Order Boxing</label>
+                    <sort_order>8</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <enableorderbox translate="label tooltip comment">
+                            <label>Group Smaller items in "Boxes" for the purpose of quoting</label>
+                            <sort_order>1</sort_order>
+                            <comment>Warning - Using this functionality may result in in some shipping costs being approximated</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>                                                          
+                            <source_model>adminhtml/system_config_source_yesno</source_model> 
+                        </enableorderbox>
+                        
+                        <boxsize translate="label tooltip comment">
+                            <label>Box Size</label>
+                            <sort_order>2</sort_order>
+                            <comment>Kilograms (kg)</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </boxsize> 
+                    </fields>
+                </orderbox>
             </groups>
-
         </transdirect_section>
-
     </sections>
-
 </config>

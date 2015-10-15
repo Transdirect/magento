@@ -38,15 +38,51 @@
                 </entities>
             </ship_mysql4>
         </models>
+         <!-- Added by ellen (events) -->
+        <events>
+            <!-- <admin_system_config_changed_section_transdirect_section>
+                <observers>
+                    <Transdirect_Ship>
+                        <type>singleton</type>
+                        <class>Transdirect_Ship_Model_Observer</class>
+                        <method>adminSystemConfigChangedSection</method>
+                    </Transdirect_Ship>
+                </observers>
+            </admin_system_config_changed_section_transdirect_section> -->
+            <checkout_type_onepage_save_order>
+                <observers>
+                    <ship>
+                        <type>singleton</type>
+                        <class>Transdirect_Ship_Model_Observer</class>
+                        <method>Savefield</method>
+                    </ship>
+                </observers>
+            </checkout_type_onepage_save_order>
+        </events>
+        <models>
+             <ship>
+                <class>Transdirect_Ship_Model</class>
+            </ship>
+        </models>
         <resources>
-            <ship_setup>
+            <ship_setup_sales>
                 <setup>
                     <module>Transdirect_Ship</module>
+                    <class>Mage_Sales_Model_Mysql4_Setup</class>
                 </setup>
                 <connection>
                     <use>core_setup</use>
                 </connection>
-            </ship_setup>
+            </ship_setup_sales>
+            <ship_setup_catalog>
+                <setup>
+                    <module>Transdirect_Ship</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ship_setup_catalog>
             <ship_write>
                 <connection>
                     <use>core_write</use>
@@ -69,20 +105,32 @@
             </ship>
         </helpers>
     </global>
+    <crontab>
+        <jobs>
+            <transdirect_ship_cron>
+                <schedule>
+                    <cron_expr>*/5 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>Transdirect_Ship/observer::cronOderSync</model>
+                </run>
+            </transdirect_ship_cron>
+        </jobs> 
+    </crontab>
     <default>
-	 <carriers>
-	   <transdirect_section>
-	     <warehouseaddress><address>1</address></warehouseaddress>
-	     <displayoptions><showcouriernames>1</showcouriernames></displayoptions>
-	   </transdirect_section>
-	      <transdirect>
-	           <active>1</active>
-	           <model>ship/carrier_transdirect</model>
-	           <title>Carrier</title>
-	           <name>Method Name</name>
-	           <price>5.00</price>
-	           <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
-	        </transdirect>
-	     </carriers>
-       </default>
+       <carriers>
+            <transdirect_section>
+                <warehouseaddress><address>1</address></warehouseaddress>
+                <displayoptions><showcouriernames>1</showcouriernames></displayoptions>
+            </transdirect_section>
+            <transdirect>
+               <active>1</active>
+               <model>ship/carrier_transdirect</model>
+               <title>Carrier</title>
+               <name>Method Name</name>
+               <price>5.00</price>
+               <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+            </transdirect>
+         </carriers>
+    </default>
 </config>
