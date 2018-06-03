@@ -65,17 +65,17 @@
                     </fields>
                 </authentication>
 
-				<warehouseaddress translate="label">
-                    <label>Warehouse Address</label>
+				<warehouseaddress1 translate="label">
+                    <label>Warehous1 Address</label>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
 
                     <fields>
-						<suburb translate="label tooltip comment">
+                        <suburb translate="label tooltip comment">
                             <label>Suburb</label>
-							<sort_order>1</sort_order>
+                            <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -84,7 +84,7 @@
 
                         <postcode translate="label tooltip comment">
                             <label>Postcode</label>
-							<sort_order>2</sort_order>
+                            <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -93,19 +93,353 @@
 
                         <address translate="label tooltip comment">
                             <label>Address</label>
-							<sort_order>3</sort_order>
+                            <sort_order>3</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <frontend_type>select</frontend_type>
-                            <source_model>ship/source_addressType</source_model>   
+                            <source_model>ship/source_addressType</source_model>
                         </address>
                     </fields>
-                </warehouseaddress>
+                </warehouseaddress1>
+                <warehouseaddress2 translate="label">
+                    <label>Warehouse2 Address</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress2>
+                <warehouseaddress3 translate="label">
+                    <label>Warehouse3 Address</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress3>
+                <warehouseaddress4 translate="label">
+                    <label>Warehouse4 Address</label>
+                    <sort_order>6</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress4>
+                <warehouseaddress5 translate="label">
+                    <label>Warehouse5 Address</label>
+                    <sort_order>7</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress5>
+                <warehouseaddress6 translate="label">
+                    <label>Warehouse6 Address</label>
+                    <sort_order>8</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress6>
+                <warehouseaddress7 translate="label">
+                    <label>Warehouse7 Address</label>
+                    <sort_order>9</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress7>
+                <warehouseaddress8 translate="label">
+                    <label>Warehouse8 Address</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress8>
+                <warehouseaddress9 translate="label">
+                    <label>Warehouse9 Address</label>
+                    <sort_order>11</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress9>
+                <warehouseaddress10 translate="label">
+                    <label>Warehouse10 Address</label>
+                    <sort_order>12</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <suburb translate="label tooltip comment">
+                            <label>Suburb</label>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </suburb>
+
+                        <postcode translate="label tooltip comment">
+                            <label>Postcode</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </postcode>
+
+                        <address translate="label tooltip comment">
+                            <label>Address</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ship/source_addressType</source_model>
+                        </address>
+                    </fields>
+                </warehouseaddress10>
+
 
 				<defaultitemsize translate="label">
                     <label>Default Item Size</label>
-                    <sort_order>4</sort_order>
+                    <sort_order>13</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -154,7 +488,7 @@
 
                 <ordersync translate="label">
                     <label>Order Sync</label>
-                    <sort_order>5</sort_order>
+                    <sort_order>14</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -178,7 +512,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <frontend_type>select</frontend_type>
-                            <source_model>ship/source_orderstatus</source_model>   
+                            <source_model>ship/source_orderStatus</source_model>   
                         </orderstatus>
 
                         <fromdate type="short">
@@ -196,7 +530,7 @@
 
                 <fromaddress translate="label">
                     <label>From Address</label>
-                    <sort_order>6</sort_order>
+                    <sort_order>15</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -253,7 +587,7 @@
                     <label>Display Options</label>
                     <comment>This selects which couriers you are able to quote from, 
                     this is an option on the api.</comment>
-                    <sort_order>7</sort_order>
+                    <sort_order>16</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -389,7 +723,7 @@
 
                 <orderbox translate="label">
                     <label>Order Boxing</label>
-                    <sort_order>8</sort_order>
+                    <sort_order>17</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
