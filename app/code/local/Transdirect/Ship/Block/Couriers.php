@@ -1,6 +1,5 @@
 <?php
-class Transdirect_Ship_Block_Couriers
-    extends Mage_Adminhtml_Block_System_Config_Form_Field_Array_Abstract
+class Transdirect_Ship_Block_Couriers extends Mage_Adminhtml_Block_System_Config_Form_Field_Array_Abstract
 {
     protected $_itemEnabledRenderer;
     protected $_itemRenderer;
@@ -93,34 +92,34 @@ class Transdirect_Ship_Block_Couriers
     }
 
     protected function _getRenderer() 
-    {
-        if (!$this->_itemRenderer) {
-            $this->_itemRenderer = $this->getLayout()->createBlock(
-                'ship/country', '',
-                array('is_render_to_js_template' => true)
-            );
+        {
+            if (!$this->_itemRenderer) {
+                $this->_itemRenderer = $this->getLayout()->createBlock(
+                    'ship/country', '',
+                    array('is_render_to_js_template' => true)
+                );
+            }
+            return $this->_itemRenderer;
         }
-        return $this->_itemRenderer;
-    }
 
-     protected function _prepareArrayRow(Varien_Object $row)
-    {
-        $row->setData(
-            'option_extra_attr_' . $this->_getEnabledRenderer()
-                ->calcOptionHash($row->getData('enable_courier')),
-            'selected="selected"'
-        );
-        $row->setData(
-            'option_extra_attr_' . $this->_getEnabledSurchageRenderer()
-                ->calcOptionHash($row->getData('enable_surcharge_courier')),
-            'selected="selected"'
-        );
+    protected function _prepareArrayRow(Varien_Object $row)
+        {
+            $row->setData(
+                'option_extra_attr_' . $this->_getEnabledRenderer()
+                    ->calcOptionHash($row->getData('enable_courier')),
+                'selected="selected"'
+            );
+            $row->setData(
+                'option_extra_attr_' . $this->_getEnabledSurchageRenderer()
+                    ->calcOptionHash($row->getData('enable_surcharge_courier')),
+                'selected="selected"'
+            );
 
-        $row->setData(
-            'option_extra_attr_' . $this->_getUnitRenderer()
-                ->calcOptionHash($row->getData('surcharge_courier_unit')),
-            'selected="selected"'
-        );
+            $row->setData(
+                'option_extra_attr_' . $this->_getUnitRenderer()
+                    ->calcOptionHash($row->getData('surcharge_courier_unit')),
+                'selected="selected"'
+            );
 
-    }
+        }
 }
