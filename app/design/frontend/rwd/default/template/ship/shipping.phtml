@@ -73,7 +73,8 @@
 </script>
 
 	<?php
-          $tmp_cart_postcode_val = $_COOKIE['cart_postocde']; 
+
+          $tmp_cart_postcode_val = $_COOKIE['cart_postocde'];
           $tmp_cart_locality_val = $_COOKIE['cart_locality']; 
     ?>
       
@@ -97,18 +98,32 @@
   <?php echo $this->getChildHtml('global_messages') ?>
   <div class="shipping-form">
     <form action="<?php echo $this->getUrl('checkout/cart/estimatePost') ?>" method="post" id="shipping-zip-form">
-      <p><?php echo $this->__('Enter your destination to get a shipping estimate.') ?></p>
+      <p><?php echo $this->__('Enter your destination to get a shipping estimatenm1.') ?></p>
       <ul class="form-list">
         <li>
           <label for="country" class="required"><em>*</em><?php echo $this->__('Country') ?></label>
           <div class="input-box">
-            <select name="country_id" id="country" class="validate-select" title="Country" >
+            <!--<select name="country_id" id="country" class="validate-select" title="Country" >
               <option value="AU" selected="selected" >Australia</option>
-            </select>
+            </select>-->
+
+<!--                <select name="country_id" id="country" class="validate-select" title="Country">-->
+<!--                    --><?php //$country_list = Mage::getResourceModel('directory/country_collection')
+//                    ->loadData()
+//                    ->toOptionArray(false) ?>
+<!--                    --><?php //if (count($country_list) > 0){ ?>
+<!--                    <option value="">Please Select</option>-->
+<!--                    --><?php //foreach($country_list as $country){ ?>
+<!--                    <option value="--><?php //echo $country['value'] ?><!--">-->
+<!--                    --><?php //echo $country['label'] ?>
+<!--                    </option>-->
+<!--                    --><?php //} ?>
+<!--                    --><?php //}?>
+<!--                </select>-->
           </div>
-          <?php /*?><div class="input-box">
-                        <?php echo Mage::getBlockSingleton('directory/data')->getCountryHtmlSelect($this->getEstimateCountryId()) ?>
-                    </div><?php */?>
+            <div class="input-box">
+                <?php echo Mage::getBlockSingleton('directory/data')->getCountryHtmlSelect($this->getEstimateCountryId()); ?>
+            </div>
         </li>
         <?php //if($this->getStateActive()): ?>
         <?php /*?>
@@ -274,7 +289,7 @@
               <?php else: ?>
               <input name="estimate_method" type="radio" value="<?php echo $abc['code']; //$this->escapeHtml($_rate->getCode()) ?>" id="s_method_<?php echo $abc['code'] ?>"<?php if($abc['code']===$this->getAddressShippingMethod()) echo ' checked="checked"' ?> class="radio" />
               <label for="s_method_<?php echo $abc['code']; ?>">
-                <?php 
+                <?php
                                       $display_showcouriername = Mage::getStoreConfig('transdirect_section/displayoptions/showcouriernames');
 									  if($display_showcouriername == '1'){
 										echo $abc['method_title'];
@@ -287,7 +302,7 @@
 										if($abc['method_title']=='mainfreight'){echo $this->__("Mainfreight"); }
 										if($abc['method_title']=='northline'){echo $this->__("Northline"); }
 										*/
-										
+
 										//$this->escapeHtml($_rate->getMethodTitle());
 									  }
 									?>
@@ -303,7 +318,7 @@
               </label>
               <?php endif ?>
             </li>
-            <?php } 
+            <?php }
 						endforeach;
 						// die('rate'); ?>
             <?php /*?> <li>
@@ -324,15 +339,19 @@
         //<![CDATA[
             var coShippingMethodForm = new VarienForm('shipping-zip-form');
             var countriesWithOptionalZip = <?php echo $this->helper('directory')->getCountriesWithOptionalZip(true) ?>;
+
             coShippingMethodForm.submit = function () {
                 var country = $F('country');
-                var optionalZip = false;
-				var optionregion = false;
-                for (i=0; i < countriesWithOptionalZip.length; i++) {
+                var optionalZip = true;
+	        var optionregion = false;
+                if(country == 'AU' || country == 'NZ'){
+                    optionalZip = false;
+                }
+                /*for (i=0; i < countriesWithOptionalZip.length; i++) {
                     if (countriesWithOptionalZip[i] == country) {
                         optionalZip = true;
                     }
-                }
+                }*/
                 if (optionalZip) {
                     $('postcode').removeClassName('required-entry');
                 }
@@ -345,11 +364,11 @@
                 else {
                     $('region').addClassName('required-entry');
                 }
-			*/	
+			*/
                 return VarienForm.prototype.submit.bind(coShippingMethodForm)();
             }
         //]]>
-        </script> 
+        </script>
   </div>
 </div>
 
